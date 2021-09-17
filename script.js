@@ -26,7 +26,7 @@ elBtn.addEventListener('click', function(){
     }
     
     rec.onresult = function(e){
-        if(e.results[0][0].transcript == 'красный' && 'qizil'){
+        if(e.results[0][0].transcript == 'qizil' && 'красный'){
             elGreen.style.background = ''
             elYellow.style.background = ''
             elRed.style.background = 'red'
