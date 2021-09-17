@@ -20,21 +20,21 @@ elBtn.addEventListener('click', function(){
     }
     
     rec.onresult = function(e){
-        if(e.results[0][0].transcript == 'красный' && 'qizil' && 'krasniy'){
+        if(e.results[0][0].transcript == ('красный' && 'qizil' && 'krasniy')){
             elGreen.style.background = ''
             elYellow.style.background = ''
             elRed.style.background = 'red'
             elResultPlace.textContent = e.results[0][0].transcript
             elResultPlace.style.borderBottom = '2px solid red'
             elWrapper.style.boxShadow = '5px 5px 5px red, -5px -5px 5px red, 5px -5px 5px red, -5px 5px 5px red'
-        }else if(e.results[0][0].transcript == 'жёлтый' && 'joltiy' && 'sariq'){
+        }else if(e.results[0][0].transcript == ('жёлтый' && 'joltiy' && 'sariq')){
             elRed.style.background = ''
             elGreen.style.background = ''
             elYellow.style.background = 'gold'
             elResultPlace.textContent = e.results[0][0].transcript
             elResultPlace.style.borderBottom = '2px solid yellow'
             elWrapper.style.boxShadow = '5px 5px 5px yellow, -5px -5px 5px yellow, 5px -5px 5px yellow, -5px 5px 5px yellow'
-        }else if(e.results[0][0].transcript == 'зелёный' && 'zelyoniy' && 'yashil'){
+        }else if(e.results[0][0].transcript == ('зелёный' && 'zelyoniy' && 'yashil')){
             elYellow.style.background = ''
             elResultPlace.textContent = e.results[0][0].transcript
             elResultPlace.style.borderBottom = '2px solid green'
