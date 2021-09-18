@@ -12,7 +12,7 @@ elBtn.addEventListener('click', function(){
 
     elSubTitle.textContent = ''
     
-    // rec.lang = 'En-en';
+    rec.lang = 'En-en';
     
     rec.onerror = function(e) {
         elYellow.style.background = ''
