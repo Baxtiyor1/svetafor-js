@@ -12,7 +12,7 @@ elBtn.addEventListener('click', function(){
 
     elSubTitle.textContent = ''
     
-    rec.lang = 'En-en';
+    // rec.lang = 'En-en';
     
     rec.onerror = function(e) {
         elYellow.style.background = ''
@@ -26,21 +26,21 @@ elBtn.addEventListener('click', function(){
     }
     
     rec.onresult = function(e){
-        if(e.results[0][0].transcript == 'красный'){
+        if(e.results[0][0].transcript == 'красный' || 'qizil' || 'red'){
             elGreen.style.background = ''
             elYellow.style.background = ''
             elRed.style.background = 'red'
             elResultPlace.textContent = e.results[0][0].transcript
             elResultPlace.style.borderBottom = '2px solid red'
             elWrapper.style.boxShadow = '5px 5px 5px red, -5px -5px 5px red, 5px -5px 5px red, -5px 5px 5px red'
-        }else if(e.results[0][0].transcript == 'жёлтый' && 'sariq' ){
+        }else if(e.results[0][0].transcript == 'жёлтый' || 'sariq' || 'yellow'){
             elRed.style.background = ''
             elGreen.style.background = ''
             elYellow.style.background = 'gold'
             elResultPlace.textContent = e.results[0][0].transcript
             elResultPlace.style.borderBottom = '2px solid yellow'
             elWrapper.style.boxShadow = '5px 5px 5px yellow, -5px -5px 5px yellow, 5px -5px 5px yellow, -5px 5px 5px yellow'
-        }else if(e.results[0][0].transcript == 'зелёный' && 'yashil'){
+        }else if(e.results[0][0].transcript == 'зелёный' || 'yashil' || 'green'){
             elYellow.style.background = ''
             elRed.style.background = ''
             elResultPlace.textContent = e.results[0][0].transcript
