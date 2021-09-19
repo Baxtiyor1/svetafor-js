@@ -32,7 +32,7 @@ function autoTimeUpdate(){
         
         elSubTitle.textContent = ''
         
-        rec.lang = 'En-en';
+        rec.lang = 'Uz-uz';
         
         rec.onerror = function(e) {
             elYellow.style.background = ''
